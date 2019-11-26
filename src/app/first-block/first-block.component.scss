@@ -1,34 +1,8 @@
 #first-block {
-    display: flex;
-    position: absolute;
-    background-color: #204060;
-    background-repeat:no-repeat;
-    background-size: cover;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    display: inline-block;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    right: 0;
-    top: 100vh;
-    vertical-align: middle;
-}
-
-#img-div {
-    justify-content: center;
-}
-
-#img-1 {
-    display: flex;
     position: relative;
-    font-size: 8rem;
-    color: white;
-    justify-content: center;
-}
-
-#div-text {
-    display: flex;
-    color: white;
-    //justify-content: center;
-    text-align: center;
+    width: 100%;
+    left: 0;
+    background-color: rgb(240, 240, 240);
 }

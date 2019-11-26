@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-first-block',
@@ -7,8 +6,6 @@ import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./first-block.component.scss']
 })
 export class FirstBlockComponent implements OnInit {
-
-  faThumbsUp = faThumbsUp;
 
   constructor() { }
 

@@ -1,50 +1,103 @@
 #splash {
-    position: relative;
     display: block;
+    position: fixed;
     background:url(../../assets/img/splash-background.jpg);
     background-position: 50% 0;
     background-repeat:no-repeat;
     background-size: cover;
     width:100%;
-    height:100%;
-    bottom:0;
-    right:0;
-    position: fixed;
-    margin: auto;
-    text-align: center;
+    height:100vh;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
 }
 
 #main-text {
     text-align: center;
     position: relative;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Patua One', Oxygen, Ubuntu, Cantarell;
+
+    /* Reponsive font-size */
     font-size: 4rem;
-    margin-top: 20vh;
+    @media (max-width: 600px) {
+        font-size: 3rem;
+    }
+    @media (min-width: 2000px) {
+        font-size: 5em;
+    }
+
+    /* Responsive-centerY */
+    top: 40%;
+    @media (max-width: 600px) {
+        top: 30%;
+    }
+    @media (min-width: 2000px) {
+        top: 45%;
+    }
+    @media screen and (orientation:landscape) //Petit écran en paysage
+    and (max-device-height: 500px) {
+        top:12%;
+    }
+
+    line-height: 4rem;
     flex-wrap: wrap;
     font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 15px black, -2px -2px 15px black;
+    color: white;       
+    text-shadow:0px 4px 3px rgba(0, 0, 0, 0.8),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+    margin: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 #under-text {
     position: relative;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.4rem;
+    font-family: 'Patua One';
+    font-size: 1.6rem;
+    @media (max-width: 600px) {
+        font-size: 1.5rem;
+    }
+    @media (min-width: 2000px) {
+        font-size: 2rem;
+    }
     font-weight: bold;
-    text-shadow: 0px 0px 3px black, 1px 1px 3px black, 1px 2px 3px black, 0px -2px 3px black;
+    text-shadow:    0px 4px 3px rgba(0,0,0,0.8),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
     color: white;
     flex-wrap: wrap;
-    width: 50%;
-    left: 25%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    top: 41%;
+    @media (max-width: 600px) {
+        top: 31%;
+    }
+    @media (min-width: 2000px) {
+        top: 46%;
+    }
+    @media screen and (orientation:landscape) //Petit écran en paysage
+    and (max-device-height: 500px) {
+        top:13%;
+    }
+    margin: auto;
+    text-align: center;
+    padding-right: 3rem;
 }
 
 #splash-scroll {
     animation: UpDown 01s linear infinite;
-    font-size: 50px;
+    font-size: 3rem;
+    @media (max-width: 600px) {
+        font-size: 2rem;
+    }
+    @media (min-width: 2000px) {
+        font-size: 4rem;
+    }
     position: absolute;
-    top: 90%;
+    bottom: 10vh;
     left: 50%;
-    margin-left: -10px; //L'image est centrée par rapport au coin suppérieur gauche, il faut la décaller légèrement
+    margin: auto;
     filter: drop-shadow(0 0 4px black);
     color: white;
 }

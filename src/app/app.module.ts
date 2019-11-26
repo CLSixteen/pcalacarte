@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { SplashComponent } from './splash/splash.component';
 import { FirstBlockComponent } from './first-block/first-block.component';
+import { MyCardComponent } from './my-card/my-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FirstBlockComponent } from './first-block/first-block.component';
     NavbarComponent,
     AccueilComponent,
     SplashComponent,
-    FirstBlockComponent
+    FirstBlockComponent,
+    MyCardComponent
   ],
   imports: [
     BrowserModule,

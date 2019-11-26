@@ -10,7 +10,7 @@ export class SplashComponent implements OnInit {
 
   faChevronDown = faChevronDown;
   mainText : string = 'VOTRE PC SUR MESURE';
-  underText : string = 'Simple, rapide, efficace. Un service complet depuis l\'entrepot jusqu\'à votre bureau.';
+  underText : string = 'Un service simple, rapide et complet, de l\'entrepot à votre bureau.';
   textColor : string = 'white';
 
   constructor() { }
