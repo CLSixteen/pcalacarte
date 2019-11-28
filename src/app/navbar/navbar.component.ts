@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EtapeService } from '../etape.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  links : string[];
+  selected = 0;
 
-  constructor() { }
+  constructor(public etapeService : EtapeService) { }
 
   ngOnInit() {
-    this.links.push("Accueil");
-    this.links.push("À propos");
+  }
+
+  changeContent(item:number){
+    console.log(item + 1);
   }
 
 }

@@ -1,4 +1,4 @@
-#first-block {
+.container-fluid {
     display: inline-block;
     padding-top: 1rem;
     position: relative;
@@ -9,4 +9,41 @@
 
 * {
     font-family: 'Roboto Slab';
+}
+
+#element1 {
+    @media screen and (max-width: 768px){
+        order: 1;
+    }
+    @media screen and (min-width: 769px){
+        order: 1;
+    }
+}
+
+#element2 {
+    @media screen and (max-width: 768px){
+        order: 2;
+    }
+    @media screen and (min-width: 769px){
+        order: 3;
+    }
+    
+}
+
+#element3 {
+    @media screen and (max-width: 768px){
+        order: 3;
+    }
+    @media screen and (min-width: 769px){
+        order: 2;
+    }
+}
+
+#element4 {
+    @media screen and (max-width: 768px){
+        order: 4;
+    }
+    @media screen and (min-width: 769px){
+        order: 4;
+    }
 }

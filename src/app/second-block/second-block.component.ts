@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavBarComponent } from '../navbar';
 
 @Component({
   selector: 'app-second-block',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondBlockComponent implements OnInit {
 
+  mainTitle : string = 'De l\'entrepôt à votre bureau en 4 étapes';
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

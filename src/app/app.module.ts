@@ -10,6 +10,7 @@ import { SplashComponent } from './splash/splash.component';
 import { FirstBlockComponent } from './first-block/first-block.component';
 import { MyCardComponent } from './my-card/my-card.component';
 import { SecondBlockComponent } from './second-block/second-block.component';
+import { EtapeComponent } from './etape/etape.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SecondBlockComponent } from './second-block/second-block.component';
     SplashComponent,
     FirstBlockComponent,
     MyCardComponent,
-    SecondBlockComponent
+    SecondBlockComponent,
+    EtapeComponent
   ],
   imports: [
     BrowserModule,
