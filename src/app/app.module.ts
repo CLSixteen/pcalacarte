@@ -10,7 +10,10 @@ import { SplashComponent } from './splash/splash.component';
 import { FirstBlockComponent } from './first-block/first-block.component';
 import { MyCardComponent } from './my-card/my-card.component';
 import { SecondBlockComponent } from './second-block/second-block.component';
-import { EtapeComponent } from './etape/etape.component';
+import { EtapeUnComponent } from './etape-un/etape-un.component';
+import { EtapeDeuxComponent } from './etape-deux/etape-deux.component';
+import { EtapeTroisComponent } from './etape-trois/etape-trois.component';
+import { EtapeQuatreComponent } from './etape-quatre/etape-quatre.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { EtapeComponent } from './etape/etape.component';
     FirstBlockComponent,
     MyCardComponent,
     SecondBlockComponent,
-    EtapeComponent
+    EtapeUnComponent,
+    EtapeDeuxComponent,
+    EtapeTroisComponent,
+    EtapeQuatreComponent
   ],
   imports: [
     BrowserModule,

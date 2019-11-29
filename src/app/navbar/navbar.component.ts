@@ -10,13 +10,14 @@ export class NavbarComponent implements OnInit {
 
   selected = 0;
 
-  constructor(public etapeService : EtapeService) { }
+  constructor(public etapeService : EtapeService) { 
+
+  }
 
   ngOnInit() {
   }
 
-  changeContent(item:number){
-    console.log(item + 1);
+  setVisible(id) {
+    this.etapeService.setVisible(id);
   }
-
 }

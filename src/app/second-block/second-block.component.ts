@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavBarComponent } from '../navbar';
 
 @Component({
   selector: 'app-second-block',

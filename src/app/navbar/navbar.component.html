@@ -5,7 +5,7 @@
             *ngFor="let item of [1,2,3,4]; let i = index;" 
             [style.background]="selected==i ? '#f0f0f0' : '#4F9EC4'"
             [style.color]="selected==i ? '#4F9EC4' : '#f0f0f0'"
-            (click)="selected=i; changeContent(selected)"
+            (click)="selected=i; setVisible(i+1)"
             >Étape {{ item }}</span>
         </div>
     </div>
